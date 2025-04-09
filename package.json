@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start:server": "ts-node src/server/server.ts",
-    "start:client": "ts-node src/client/client.ts",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "start:server": "node dist/server/server.js",
+    "start:client": "node dist/client/client.js",
     "dev:server": "nodemon --exec ts-node src/server/server.ts",
     "dev:client": "nodemon --exec ts-node src/client/client.ts"
   },
@@ -24,5 +25,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.10"
   }
 }
