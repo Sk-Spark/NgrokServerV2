@@ -1,0 +1,28 @@
+{
+  "name": "ngrogserverv2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start:server": "ts-node src/server/server.ts",
+    "start:client": "ts-node src/client/client.ts",
+    "dev:server": "nodemon --exec ts-node src/server/server.ts",
+    "dev:client": "nodemon --exec ts-node src/client/client.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A tunneling solution similar to ngrok for accessing Raspberry Pi through Azure Web App",
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "@types/node-fetch": "^2.6.12",
+    "@types/ws": "^8.18.1",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "node-fetch": "^2.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "ws": "^8.18.1"
+  }
+}
